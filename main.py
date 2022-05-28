@@ -25,7 +25,7 @@ def coefficient(x, y):
     return a
 
 
-def _newton(x_data, y_data, x):
+def newton(x_data, y_data, x):
     a = coefficient(x_data, y_data)
     n = len(x_data) - 1  # Degree of polynomial
     p = a[n]
@@ -65,8 +65,9 @@ def task2():
     a = np.array([3.522, 4.176, 3.475, 4.25], float)
 
     for i in range(len(a)):
-        print(f"L({a[i]}) = {_newton(x, y, a[i])}")
+        print(f"L({a[i]}) = {newton(x, y, a[i])}")
 
 
 task1()
 task2()
+
