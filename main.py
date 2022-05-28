@@ -50,9 +50,7 @@ def task1():
     for i in range(len(a)):
         print(f"L({a[i]}) = {f.subs('x', a[i])}")
 
-    #sm.plot(f)
-    for i in range(len(x)):
-        print(y[i])
+    sm.plot(f)
 
 
 def task2():
